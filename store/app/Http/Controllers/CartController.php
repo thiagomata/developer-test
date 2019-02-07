@@ -9,7 +9,7 @@ use App\CartProduct;
 
 class CartController extends Controller
 {
-      private function createCart() {
+    private function createCart() {
       $objCart = new Cart();
       $objCart->save();
       return $objCart;
@@ -69,10 +69,10 @@ class CartController extends Controller
 
       $objCart = $this->getSessionCart($request);
 
-      // $objCartProduct = CartProduct::
-      //   where("product_id",$objProduct->id)->
-      //   where("cart_id",$objCart->id)->
-      //   first();
+      $objCartProduct = CartProduct::
+        where("product_id",$objProduct->id)->
+        where("cart_id",$objCart->id)->
+        first();
       $objCartProduct = null;
 
       if( $objCartProduct == null ) {
@@ -163,6 +163,5 @@ class CartController extends Controller
         'cart' => $objJsonCart
       ]);
       // return response()->json($objJsonCart);
-//      return json_encode($objJsonCart);
     }
 }
