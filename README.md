@@ -3,7 +3,7 @@ A very simple PHP server to add, remove and change products on a cart.
 
 ## Important Files
 
-[Web Routes](blob/master/store/routes/web.php)
+[Web Routes](store/routes/web.php)
 
 Models [Cart](blob/master/store/app/Cart.php), [Product](blob/master/store/app/Product.php), [CartProduct](blob/master/store/app/CartProduct.php)
 
