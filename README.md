@@ -16,6 +16,7 @@ Migrations of the
 
 [Cart Controller](store/app/Http/Controllers/CartController.php)
 
+The template [Cart Blade](store/resources/views/cart.blade.php)
 
 
 
